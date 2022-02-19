@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login</title>
+</head>
+<body>
+
+<section class="auth-img vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <ul class="card-body border-0 text-center d-grid justify-content-center list-unstyled">
+                    <div class="alert alert-danger d-none" id="notify"></div>
+
+                    <a class="d-flex justify-content-center mb-5" href="#"><img src="img/logo.svg" alt="logo"></a>
+
+                    <li class="form-outline m-4">
+                        <svg class="auth-user" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0653 12.8512 14.2174 12.5 13.3334 12.5H6.66671C5.78265 12.5 4.93481 12.8512 4.30968 13.4763C3.68456 14.1014 3.33337 14.9493 3.33337 15.8333V17.5"
+                                  stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z"
+                                  stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="email" id="email" placeholder="Username" required class="form-control-lg"/>
+                    </li>
+
+                    <li class="form-outline ">
+                        <svg class="auth-lock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8333 9.16667H4.16667C3.24619 9.16667 2.5 9.91286 2.5 10.8333V16.6667C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6667V10.8333C17.5 9.91286 16.7538 9.16667 15.8333 9.16667Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.83337 9.16667V5.83334C5.83337 4.72827 6.27236 3.66846 7.05376 2.88706C7.83516 2.10566 8.89497 1.66667 10 1.66667C11.1051 1.66667 12.1649 2.10566 12.9463 2.88706C13.7277 3.66846 14.1667 4.72827 14.1667 5.83334V9.16667" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="password" required id="password" placeholder="password"
+                               class="form-control-lg"/>
+                    </li>
+                    <button class="auth-btn" type="submit" id="auth-submit">Login</button>
+                    <a href="#" class="auth-text">Forgot password?</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
