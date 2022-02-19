@@ -57,7 +57,7 @@ logout.addEventListener('click', async () => {
  *
  */
 searchBtn.addEventListener('click', async () => {
-    const books = await api.getUsers(searchEl.value.trim);
+    const books = await api.getUsers(searchEl.value.trim());
     if (!books) {
         alert("Not found")
     }
